@@ -1,0 +1,16 @@
+
+.containerPrincipal{
+    border-radius: 5px;
+    display: flex;
+    border: 1px solid black;
+   
+}
+.coments{
+    margin-right: 30px;
+    display: flex;
+    border-radius: 5px;
+    border-right: 1px solid black;
+    padding: 2%;
+    max-width: 50%;
+    background-color: yellow;
+}

@@ -1,0 +1,61 @@
+
+<link rel="stylesheet" href="estilos.css">
+<h3>Criando registro no salesforce</h3>
+
+<form action="/create" method="POST">
+
+
+
+<div class="containerPrincipal">
+
+ 
+        <div class="coments">
+            
+
+           
+            
+            <div id="coments1">
+                <label id="labal">Noma da Trilha *:</label><br>
+                <textarea class="msg" cols="50" name="nometrilha" id="_come"></textarea><br>
+
+                <label id="labal">Noma do Modulo 1:</label><br>
+                <textarea class="msg" cols="50" name="nomemodulo1" id="_come"></textarea><br>
+
+                <label id="labal">Noma do Modulo 2:</label><br>
+                <textarea class="msg" cols="50" name="nomemodulo2" id="_come"></textarea><br>
+
+                <label id="labal">Noma do Modulo 3:</label><br>
+                <textarea class="msg" cols="50" name="nomemodulo3" id="_come"></textarea><br>
+
+                <label id="labal">Noma do Modulo 4:</label><br>
+                <textarea class="msg" cols="50" name="nomemodulo4" id="_come"></textarea><br>
+
+                <label id="labal">Noma do Modulo 5:</label><br>
+                <textarea class="msg" cols="50" name="nomemodulo5" id="_come"></textarea><br>
+                <a href="teste"><input class="comn" type="button" value="Buscar trilhas"/></a>
+
+                
+                <input class="comn" type="submit" value="Salvar"/>
+                
+   
+        </div>
+
+  </div> 
+ 
+  <div class="informa">
+             <h3>informações do Objeto</h3>
+            {{#if novo}}
+                {{#each novo}}
+                <p>Name da nova trilha favorita criada: <br> {{Name}}</p>
+                <p>Nome do Modulo 1 <br> {{NomeModulo1__c}}</p>
+                <p>Data de criação: {{CreatedById}}</p>
+                {{/each}}
+                {{else}}
+                <p>sem dados a exibir</p>
+                {{/if}}
+
+        </div>
+
+
+  
+</form> 

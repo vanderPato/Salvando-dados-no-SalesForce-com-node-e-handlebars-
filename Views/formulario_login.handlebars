@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="estilos.css">
+<h3>Buscando registro no salesforce</h3>
+
+<form action="/teste" method="POST">
+
+
+
+<div class="containerPrincipal">
+
+
+
+
+<div class="coments">
+
+
+
+   
+  
+             <div id="coments1">
+                <textarea class="msg" cols="50" name="come" id="_come"></textarea>  <br>
+                <input class="comn" type="submit" value="Buscar"/>
+                <a href="create"><input class="comn" type="button" value="Criar Trilha"/></a>
+             </div>
+            </div>
+
+<div class="informa">
+   <h3>informações do Objeto</h3>
+            {{#if result}}
+            {{#each result}}
+            <p>Name 
+              <br>{{Name}}</p><br>
+
+            <p>Nome Modulo 1:<br>
+             {{NomeModulo1__c}}</p><br>
+            <p>Nome Modulo 2:<br> 
+            {{NomeModulo2__c}}</p><br>
+            <p>Nome Modulo 3:<br>
+             {{NomeModulo3__c}}</p><br>
+            <p>Nome Modulo 4:<br>
+             {{NomeModulo4__c}}</p><br>
+            <p>Nome Modulo 5:<br>
+             {{NomeModulo5__c}}</p><br>
+          
+            {{/each}}
+            {{else}}
+            <p>Sem dados a exibir</p>
+            {{/if}}
+        
+  
+  </div> 
+</form> 
